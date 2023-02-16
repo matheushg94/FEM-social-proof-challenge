@@ -27,7 +27,48 @@ body {
 }
 
 main {
+    display: flex;
+    justify-content: center;
     height: calc(100vh - 40px);
+}
+
+.container {
+    width: 300px;
+    padding: 16px;
+    padding: 1rem;
+    margin-top: 32px;
+    margin-top: 2rem;
+}
+
+.title {
+    color: var(--color-primary-1);
+    font-size: 2rem;
+    font-weight: var(--fw-bolder);
+    text-align: center;
+}
+
+.description {
+    color: var(--color-neutral-1);
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.rate {
+    background-color: var(--color-neutral-2);
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    
+    color: var(--color-primary-1);
+    font-weight: var(--fw-bold);
+    text-align: center;
+}
+
+.comment-card {
+    background-color: var(--color-primary-1);
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .footer {
