@@ -20,22 +20,27 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: var(--ff);
-    font-size: 15px;
+    font-size: 1rem;
+}
+
+.bg-top {
+    background: url(../images/bg-pattern-top-mobile.svg) no-repeat left top;
+}
+
+.bg-bottom {
+    background: url(../images/bg-pattern-bottom-mobile.svg) no-repeat right bottom;
 }
 
 main {
     display: flex;
     justify-content: center;
-    min-height: calc(100vh - 40px); /* 100vh - footer height */
+    min-height: 100vh;
 }
 
 .container {
-    width: 300px;
-    padding: 16px;
-    padding: 2rem;
-    margin-top: 32px;
-    margin-top: 2rem;
-    border: 1px solid red;
+    width: 20rem;
+    padding: 1rem;
+    margin-top: 4rem;
 }
 
 .title {
@@ -50,18 +55,19 @@ main {
 
 .description {
     color: var(--color-neutral-1);
+    font-weight: var(--fw-bold);
     line-height: 1.2rem;
     text-align: center;
 }
 
 .rates {
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 .rate {
     background-color: var(--color-neutral-2);
-    margin: 10px 0px;
-    padding: 10px;
+    margin: 1rem 0;
+    padding: 1rem;
     border-radius: 10px;
     
     color: var(--color-primary-1);
@@ -69,38 +75,67 @@ main {
     text-align: center;
 }
 
-.name {
-    color: var(--color-neutral-3);
-    font-weight: var(--fw-bolder);
-}
-
-.status {
-    color: var(--color-primary-2);
+.stars {
+    margin-bottom: 0.5rem;
 }
 
 .comment-card {
     background-color: var(--color-primary-1);
-    margin: 10px 0px;
-    padding: 10px;
-    border-radius: 10px;
+    margin: 1rem 0;
     padding: 2rem;
+    border-radius: 10px;
+}
+
+.commentator {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.commentator-picture {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.commentator-name {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    color: var(--color-neutral-3);
+    font-weight: var(--fw-bolder);
+}
+
+.commentator-status {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: var(--color-primary-2);
 }
 
 .comment-card > p {
     color: var(--color-neutral-3);
-    line-height: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: .2px;
 }
 
 /* footer */
 
 .footer {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
-    padding: 6px;
-    margin-top: 16px;
+    padding: .5rem;
     margin-top: 1rem;
+    letter-spacing: .1px;
 }
 
 .footer a {
-    color: hsl(228, 45%, 44%);
+    color: var(--color-primary-1);
+    font-weight: var(--fw-bolder);
+}
+
+.footer a:hover {
+    color: var(--color-primary-2);
 }
